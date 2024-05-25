@@ -26,5 +26,15 @@ map("i", "<A-k>", "<esc><cmd>m .-2<cr>==gi", { desc = "Move Up" })
 map("v", "<A-j>", ":m '>+1<cr>gv=gv", { desc = "Move Down" })
 map("v", "<A-k>", ":m '<-2<cr>gv=gv", { desc = "Move Up" })
 
--- terminal
-map("t", "<C-\\><C-\\><C-\\>", "<C-\\><C-n>",  { noremap = true, silent = true })
+-- terminals 
+map("t", "<C-\\><C-\\>", "<C-\\><C-n>", { noremap = true, silent = true })
+
+map('i', '<C-J>', '<ESC>o', { noremap = true, silent = true })
+map('i', '<C-K>', '<ESC>O', { noremap = true, silent = true })
+
+
+
+
+
+-- map('i', '<S-l>', '<ESC><CR>', { noremap = true, silent = true })
+

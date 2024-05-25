@@ -11,7 +11,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 local lazy_config = require "configs.lazy"
-
+-- local treesitter_config = require "configs.treesitter"
 -- load plugins
 require("lazy").setup({
   {
@@ -32,8 +32,9 @@ dofile(vim.g.base46_cache .. "defaults")
 dofile(vim.g.base46_cache .. "statusline")
 
 require "nvchad.autocmds"
-
 vim.schedule(function()
   require "mappings"
 end)
 -- vim.cmd('colorscheme nightfo--[[ x ]]')
+
+
